@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:tflite/tflite.dart';
+import 'package:weed_classification/details_screen.dart';
 
 class Tensorflow extends StatefulWidget {
   @override
@@ -117,12 +118,24 @@ class _TensorflowState extends State<Tensorflow> {
                     ),
                   ),
             SizedBox(
-              height: MediaQuery.of(context).size.height * 0.01,
+              height: 90,
             ),
             FloatingActionButton(
               tooltip: 'Pick Image',
               onPressed: () {
                 pickImage();
+                // To navigate to details page
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) => DetailsScreen(
+                //       plant: plant,
+                //     ),
+                //   ),
+                // );
+
+                // Extra Tip:
+                // You can also use "enums" instead of using strings from the type of plant.
               },
               child: Icon(
                 Icons.add_a_photo,

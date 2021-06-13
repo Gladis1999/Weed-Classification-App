@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tensorflow/tensorflow.dart';
+import 'package:weed_classification/tensorflow.dart';
 
 class HomePage extends StatefulWidget {
   @override
