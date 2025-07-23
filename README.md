@@ -1,19 +1,27 @@
-# tensorflow
+# Weed Detection in Precision Farming
 
-A new Flutter project.
+## Description  
+A mobile app that identifies weeds in crop fields using transfer learning with MobileNetV2. It enables farmers to detect weeds in real-time and offline, improving precision farming practices.
 
-## Getting Started
+## Features  
+- Real-time weed identification using camera input  
+- Offline inference with TensorFlow Lite integration  
+- High accuracy with 94.7% precision and 92.4% recall
 
-This project is a starting point for a Flutter application.
+## Technologies Used  
+- Python, TensorFlow, TensorFlow Lite  
+- Flutter for mobile app development  
+- MobileNetV2 transfer learning model
 
-A few resources to get you started if this is your first Flutter project:
+## Installation & Setup  
+1. Clone this repository  
+2. For model training, install Python dependencies:  
+   `pip install -r requirements.txt`  
+3. For running the mobile app, install Flutter and open the `mobile_app` folder  
+4. Run the Flutter app on your device or emulator
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Usage  
+Open the app, point the camera to crops, and get live weed detection results instantly.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-
-To look for more flutter content search codeDecoders in YouTube
-
+## Results  
+- Achieved 94.7% precision and 92.4% recall on 2,400 annotated images
